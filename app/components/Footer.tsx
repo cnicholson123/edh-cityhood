@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-green-700 mt-8 pt-8 text-center text-green-200">
-          <p>&copy; 2024 EDH Citizens for Cityhood. All rights reserved.</p>
+          <p>&copy; 2025 EDH Citizens for Cityhood. All rights reserved.</p>
         </div>
       </div>
     </footer>

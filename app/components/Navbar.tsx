@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0">
-            <a href="/" className="text-2xl font-bold text-blue-900">
+            <a href="/" className="text-2xl font-bold text-green-800">
               EDH Cityhood
             </a>
           </div>
@@ -28,14 +28,11 @@ const Navbar = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-blue-900 transition"
+                  className="text-gray-700 hover:text-green-700 transition"
                 >
                   {item.name}
                 </a>
               ))}
-              <button className="bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition">
-                Get Involved
-              </button>
             </div>
           </div>
 
@@ -43,7 +40,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-blue-900"
+              className="text-gray-700 hover:text-green-700"
             >
               {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
@@ -57,15 +54,12 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="block py-2 text-gray-700 hover:text-blue-900"
+                className="block py-2 text-gray-700 hover:text-green-700"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </a>
             ))}
-            <button className="w-full mt-4 bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-800 transition">
-              Get Involved
-            </button>
           </div>
         )}
       </div>

@@ -17,7 +17,7 @@ const Advantages = () => {
   return (
     <section className="py-20 bg-white" id="advantages">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16">Advantages of Cityhood</h2>
+        <h2 className="text-4xl font-bold text-center mb-16 text-green-800">Advantages of Cityhood</h2>
         
         <div className="max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
@@ -29,8 +29,8 @@ const Advantages = () => {
             ))}
           </div>
           
-          <div className="mt-12 bg-blue-50 p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold mb-4">No New Taxes Required</h3>
+          <div className="mt-12 bg-green-50 p-6 rounded-lg">
+            <h3 className="text-2xl font-semibold mb-4 text-green-800">No New Taxes Required</h3>
             <p className="text-gray-700">
               The transition to cityhood will be accomplished using existing tax revenues.
               The initiative will be abandoned if additional taxes are required.

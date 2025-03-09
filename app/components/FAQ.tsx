@@ -30,21 +30,21 @@ const FAQ = () => {
   return (
     <section className="py-20 bg-white" id="faq">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
+        <h2 className="text-4xl font-bold text-center mb-16 text-green-800">Frequently Asked Questions</h2>
         
         <div className="max-w-3xl mx-auto">
           {faqs.map((faq, index) => (
             <div key={index} className="mb-4">
               <button
-                className="w-full text-left p-6 bg-gray-50 rounded-lg hover:bg-gray-100 transition"
+                className="w-full text-left p-6 bg-green-50 rounded-lg hover:bg-green-100 transition"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
                 <div className="flex justify-between items-center">
-                  <h3 className="text-xl font-semibold">{faq.question}</h3>
+                  <h3 className="text-xl font-semibold text-green-800">{faq.question}</h3>
                   {openIndex === index ? (
-                    <FaChevronUp className="text-blue-600" />
+                    <FaChevronUp className="text-green-600" />
                   ) : (
-                    <FaChevronDown className="text-blue-600" />
+                    <FaChevronDown className="text-green-600" />
                   )}
                 </div>
                 {openIndex === index && (

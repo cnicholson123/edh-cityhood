@@ -19,7 +19,7 @@ const FAQ = () => {
       answer: "Essential services like Fire/EMS, Schools, Water, Judicial, Jails, and Public Health will remain with the County and other Districts. The CSD will be dissolved, with Parks & Recreation functions being absorbed by the new city."
     },
     {
-      question: "How will local control improve?",
+      question: "How will cityhood improve local control?",
       answer: "The city will be governed by a five-member City Council, all from EDH and elected only by EDH residents. This ensures decisions about our community are made by people who live here and understand our needs."
     },
     {

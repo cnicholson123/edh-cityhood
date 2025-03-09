@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
-import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaChevronDown, FaChevronUp, FaArrowUp } from 'react-icons/fa';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const [openConcernIndex, setConcernOpenIndex] = useState<number | null>(null);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const faqs = [
     {
@@ -89,6 +93,14 @@ const FAQ = () => {
               </button>
             </div>
           ))}
+          <div className="flex justify-end mt-8">
+            <button
+              onClick={scrollToTop}
+              className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+            >
+              <FaArrowUp /> Back to Top
+            </button>
+          </div>
         </div>
 
         <h2 className="text-4xl font-bold text-center mb-16 text-green-800">Potential Concerns</h2>
@@ -114,6 +126,14 @@ const FAQ = () => {
               </button>
             </div>
           ))}
+          <div className="flex justify-end mt-8">
+            <button
+              onClick={scrollToTop}
+              className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+            >
+              <FaArrowUp /> Back to Top
+            </button>
+          </div>
         </div>
       </div>
     </section>

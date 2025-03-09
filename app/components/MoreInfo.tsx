@@ -1,7 +1,11 @@
 import React from 'react';
-import { FaFilePdf } from 'react-icons/fa';
+import { FaFilePdf, FaArrowUp } from 'react-icons/fa';
 
 const MoreInfo = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const documents = [
     {
       title: "Cityhood Handout",
@@ -42,6 +46,15 @@ const MoreInfo = () => {
                 </a>
               </div>
             ))}
+          </div>
+          
+          <div className="flex justify-end mt-12">
+            <button
+              onClick={scrollToTop}
+              className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+            >
+              <FaArrowUp /> Back to Top
+            </button>
           </div>
         </div>
       </div>

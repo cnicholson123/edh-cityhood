@@ -2,22 +2,19 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div className="relative bg-blue-900 text-white py-24">
+    <div className="relative bg-green-800 text-white py-24">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl">
           <h1 className="text-5xl font-bold mb-6">
             El Dorado Hills Cityhood Initiative
           </h1>
           <p className="text-xl mb-8">
-            Shape the future of El Dorado Hills through local control and self-governance.
-            Join us in our journey to cityhood by November 2026.
+            Preserving our natural environment while shaping the future of El Dorado Hills through local governance.
+            Join our journey to cityhood by November 2026.
           </p>
           <div className="space-x-4">
-            <button className="bg-white text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-blue-100 transition">
+            <button className="bg-white text-green-800 px-8 py-3 rounded-lg font-semibold hover:bg-green-50 transition">
               Learn More
-            </button>
-            <button className="border-2 border-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition">
-              Get Involved
             </button>
           </div>
         </div>

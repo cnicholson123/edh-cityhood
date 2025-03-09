@@ -6,6 +6,7 @@ import CurrentSituation from './components/CurrentSituation';
 import Advantages from './components/Advantages';
 import Process from './components/Process';
 import FAQ from './components/FAQ';
+import MoreInfo from './components/MoreInfo';
 import Footer from './components/Footer';
 import './globals.css';
 
@@ -17,6 +18,7 @@ export default function Home() {
       <Advantages />
       <Process />
       <FAQ />
+      <MoreInfo />
       <Footer />
     </main>
   );

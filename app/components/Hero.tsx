@@ -7,6 +7,7 @@ const Hero = () => {
     { name: 'Advantages', href: '#advantages' },
     { name: 'Process', href: '#process' },
     { name: 'FAQ', href: '#faq' },
+    { name: 'More Info', href: '#more-info' },
   ];
 
   return (

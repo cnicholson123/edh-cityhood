@@ -29,6 +29,10 @@ const FAQ = () => {
     {
       question: "How will cityhood improve law enforcement?",
       answer: "Under cityhood, El Dorado Hills would have its own dedicated local police force that patrols exclusively within EDH boundaries. This means faster response times, as officers won't be pulled away to cover other parts of the county. Local police can focus on EDH-specific needs and priorities, develop deeper community relationships, and provide more consistent coverage. Additionally, having our own police force means local control over law enforcement policies, priorities, and resource allocation to better serve our community's specific needs."
+    },
+    {
+      question: "How would local planning and zoning help EDH?",
+      answer: "Local planning and zoning control would give EDH residents direct oversight over our community's development. Instead of decisions being made in Placerville, a local City Council would control crucial matters like the Amazon warehouse proposals, open space rezoning, and major development projects. For complex projects like the Old Golf Course, the city would have comprehensive power to manage all aspects of development. This means better protection of EDH's character and the ability to ensure new projects align with our community's vision.  If EDH had been a city, we very likely could have purchased the Old Golf Course for a much lower price because we would not have approved a residential re-zone."
     }
   ];
 

@@ -25,6 +25,10 @@ const FAQ = () => {
     {
       question: "What's the timeline for becoming a city?",
       answer: "The process targets November 2026 for the ballot measure. Key milestones include a March 13, 2025 CSD Board meeting, followed by comprehensive fiscal and environmental analyses."
+    },
+    {
+      question: "How will cityhood improve law enforcement?",
+      answer: "Under cityhood, El Dorado Hills would have its own dedicated local police force that patrols exclusively within EDH boundaries. This means faster response times, as officers won't be pulled away to cover other parts of the county. Local police can focus on EDH-specific needs and priorities, develop deeper community relationships, and provide more consistent coverage. Additionally, having our own police force means local control over law enforcement policies, priorities, and resource allocation to better serve our community's specific needs."
     }
   ];
 

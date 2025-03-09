@@ -4,6 +4,11 @@ import { FaUsers, FaChartLine, FaBalanceScale, FaMoneyBillWave } from 'react-ico
 const CurrentSituation = () => {
   const facts = [
     {
+      icon: <FaBalanceScale className="text-4xl text-green-600 mb-4" />,
+      title: "Limited Representation",
+      description: "Only one Supervisor represents EDH in county decisions"
+    },
+    {
       icon: <FaUsers className="text-4xl text-green-600 mb-4" />,
       title: "Largest Community",
       description: "EDH is the largest community in El Dorado County with 50K+ population (26% of EDC total)"
@@ -12,11 +17,6 @@ const CurrentSituation = () => {
       icon: <FaChartLine className="text-4xl text-green-600 mb-4" />,
       title: "Strong Tax Base",
       description: "EDH's tax base is ~31% of EDC total (compared to Placerville at ~3.2%)"
-    },
-    {
-      icon: <FaBalanceScale className="text-4xl text-green-600 mb-4" />,
-      title: "Limited Representation",
-      description: "Only one Supervisor represents EDH in county decisions"
     },
     {
       icon: <FaMoneyBillWave className="text-4xl text-green-600 mb-4" />,

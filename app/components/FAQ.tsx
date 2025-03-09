@@ -3,6 +3,7 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openConcernIndex, setConcernOpenIndex] = useState<number | null>(null);
 
   const faqs = [
     {
@@ -27,12 +28,39 @@ const FAQ = () => {
     }
   ];
 
+  const concerns = [
+    {
+      question: "Won't this require new taxes?",
+      answer: "No. A third-party preliminary study showed that our city is viable and will operate at a surplus without new taxes. The next step is to do a comprehensive fiscal analysis. If it shows that the city is not viable without new taxes, then cityhood would fail before reaching voters. The county is collecting far more from EDH than it spends on EDH. The money is there."
+    },
+    {
+      question: "Even if viable initially, won't future events require tax increases?",
+      answer: "The future is uncertain, but a city would not increase uncertainty. The state and/or county could also face financial crises causing them to seek new taxes or cut services. EDH voters will decide - the city will not be able to impose new taxes without a vote of EDH residents."
+    },
+    {
+      question: "Won't this add another layer of government?",
+      answer: "No. Incorporation would consolidate and streamline municipal services from two government agencies – El Dorado County and the El Dorado Hills Community Services District (CSD) – to one El Dorado Hills city government serving our community. There will be no duplication of services, only a consolidation of government services."
+    },
+    {
+      question: "I moved to EDH to escape another city. I don't want to live in a city.",
+      answer: "'City' is just a word that means 'local control.' The real-world impact of cityhood will depend on actions of our City Council, which will be elected by local residents only, instead of 5 County Board of Supervisors operating from Placerville."
+    },
+    {
+      question: "Will this mean more low-income housing in EDH?",
+      answer: "No. Currently, El Dorado County is in control of placement of affordable housing in EDH. Incorporation does not increase the overall regional low-income housing allocation. As a city, we will have a seat at the table and have local control over how and where to plan for affordable housing instead of the County."
+    },
+    {
+      question: "Does cityhood mean more growth?",
+      answer: "No. The opponents of cityhood in 2005 made this argument. Under county control, EDH has grown a lot since 2005. Growth more than doubled from 18,000 residents in 2000 to 42,000 in 2010. The current population is approximately 50,000. Cityhood puts local residents in charge of land use decisions impacting growth. There would be no future re-zones without city approval."
+    }
+  ];
+
   return (
     <section className="py-20 bg-white" id="faq">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-16 text-green-800">Frequently Asked Questions</h2>
         
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto mb-20">
           {faqs.map((faq, index) => (
             <div key={index} className="mb-4">
               <button
@@ -48,7 +76,32 @@ const FAQ = () => {
                   )}
                 </div>
                 {openIndex === index && (
-                  <p className="mt-4 text-gray-600">{faq.answer}</p>
+                  <p className="mt-4 text-gray-700">{faq.answer}</p>
+                )}
+              </button>
+            </div>
+          ))}
+        </div>
+
+        <h2 className="text-4xl font-bold text-center mb-16 text-green-800">Potential Concerns</h2>
+        
+        <div className="max-w-3xl mx-auto">
+          {concerns.map((concern, index) => (
+            <div key={index} className="mb-4">
+              <button
+                className="w-full text-left p-6 bg-red-50 rounded-lg hover:bg-red-100 transition"
+                onClick={() => setConcernOpenIndex(openConcernIndex === index ? null : index)}
+              >
+                <div className="flex justify-between items-center">
+                  <h3 className="text-xl font-semibold text-red-800">{concern.question}</h3>
+                  {openConcernIndex === index ? (
+                    <FaChevronUp className="text-red-600" />
+                  ) : (
+                    <FaChevronDown className="text-red-600" />
+                  )}
+                </div>
+                {openConcernIndex === index && (
+                  <p className="mt-4 text-gray-700">{concern.answer}</p>
                 )}
               </button>
             </div>

@@ -12,16 +12,9 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-lg fixed w-full z-50">
+    <nav className="bg-white shadow-lg w-full z-50">
       <div className="container mx-auto px-6">
         <div className="flex justify-between items-center h-20">
-          <div className="flex-shrink-0">
-            <a href="/" className="text-2xl font-bold text-green-800">
-              EDH Cityhood
-            </a>
-          </div>
-
-          {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
               {navItems.map((item) => (

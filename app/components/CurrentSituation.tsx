@@ -20,15 +20,15 @@ const CurrentSituation = () => {
     },
     {
       icon: <FaMoneyBillWave className="text-4xl text-green-600 mb-4" />,
-      title: "Tax Contribution",
+      title: "County's Cash Cow",
       description: "EDH contributes more in taxes than it receives in services"
     }
   ];
 
   return (
-    <section className="py-20 bg-green-50" id="current-situation">
+    <section className="py-20 bg-white" id="current-situation">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16 text-green-800">Current Situation</h2>
+        <h2 className="text-4xl font-bold text-center mb-16 text-green-800">Current Situation (Subservient to County)</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {facts.map((fact, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">

@@ -20,7 +20,7 @@ const FAQ = () => {
     },
     {
       question: "What happens to existing services?",
-      answer: "Essential services like Fire/EMS, Schools, Water, Judicial, Jails, and Public Health will remain with the County and other Districts. The CSD will be dissolved, with Parks & Recreation functions being absorbed by the new city."
+      answer: "The new city would take over land use, law enforcement, parks and rec, road maintenance, and other local municipal services. Other essential services like Fire/EMS, Schools, Water, Judicial, Jails, and Public Health will remain with the County and other Districts. The CSD will be dissolved, with Parks & Recreation functions being absorbed by the new city."
     },
     {
       question: "How will cityhood improve local control?",

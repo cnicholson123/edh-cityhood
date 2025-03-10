@@ -41,12 +41,9 @@ const Hero = () => {
       <div className="relative bg-white text-gray-800 py-6">
         <div className="container mx-auto px-6">
           <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl font-bold text-green-800 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-green-800">
               Is Cityhood Right for El Dorado Hills?
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              Take <span className="highlight-control">control</span> of our future through <span className="highlight-local">local</span> governance and community leadership.
-            </p>
           </div>
         </div>
       </div>

@@ -39,7 +39,7 @@ const Advantages = () => {
     <section className="py-20 bg-gray-50" id="advantages">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-16 text-green-800">
-          Advantages of <span className="highlight-local">Local</span> <span className="highlight-control">Control</span>
+          Advantages of Cityhood
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit, index) => (

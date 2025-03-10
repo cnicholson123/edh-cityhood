@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaUsers, FaMoneyBillWave, FaShieldAlt, FaRoad, FaCity, FaHandshake } from 'react-icons/fa';
+import { FaUsers, FaMoneyBillWave, FaShieldAlt, FaRoad, FaCity, FaTree } from 'react-icons/fa';
 
 const Advantages = () => {
   const benefits = [
@@ -29,9 +29,9 @@ const Advantages = () => {
       description: (<><span className="highlight-local">Local</span> <span className="highlight-control">control</span> over zoning and future growth</>)
     },
     {
-      icon: <FaHandshake className="text-4xl text-green-600 mb-4" />,
-      title: "Community Voice",
-      description: "Stronger position in regional planning decisions"
+      icon: <FaTree className="text-4xl text-green-600 mb-4" />,
+      title: "Better Parks",
+      description: "Improved development of parks, sports facilities and recreation opportunities"
     }
   ];
 

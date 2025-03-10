@@ -29,7 +29,7 @@ const CurrentSituation = () => {
     <section className="py-20 bg-white" id="current-situation">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-16 text-green-800">
-          Current Situation (No <span className="highlight-local">Local</span> <span className="highlight-control">Control</span>)
+          Current Situation (Subservient to County)
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {facts.map((fact, index) => (

@@ -36,7 +36,7 @@ const FAQ = () => {
     },
     {
       question: "How would local planning and zoning help EDH?",
-      answer: "Local planning and zoning control would give EDH residents direct oversight over our community's development. Instead of decisions being made in Placerville, a local City Council would control crucial matters like the Amazon warehouse proposals, open space rezoning, and major development projects. For complex projects like the Old Golf Course, the city would have comprehensive power to manage all aspects of development. This means better protection of EDH's character and the ability to ensure new projects align with our community's vision.  If EDH had been a city, we very likely could have purchased the Old Golf Course for a much lower price because we would not have approved a residential re-zone."
+      answer: "Local planning and zoning control would give EDH residents direct oversight over our community's development. Instead of decisions being made in Placerville, a local City Council would control crucial matters like the Amazon warehouse proposals, open space rezoning, and major development projects. For complex projects, like CSD's development of recently-purchased Old Golf Course property, the city would have comprehensive power to negotiate all aspects of the project. This means better protection of EDH's character and the ability to ensure new projects align with our community's vision.  If EDH had been a city, we very likely could have purchased the Old Golf Course for a much lower price because we would not have approved a residential re-zone, and the land owner would have realized that."
     }
   ];
 

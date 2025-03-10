@@ -1,41 +1,54 @@
 import React from 'react';
-import { FaCheckCircle } from 'react-icons/fa';
+import { FaUsers, FaMoneyBillWave, FaShieldAlt, FaRoad, FaCity, FaHandshake } from 'react-icons/fa';
 
 const Advantages = () => {
   const benefits = [
-    "Local control with City Council living in EDH",
-    "Keep more tax dollars in EDH for local use",
-    "Dedicated local Police force for EDH",
-    "Improved parks and recreation facilities",
-    "Better road maintenance funding",
-    "Control over land use and development",
-    "Management of low-income housing mandates",
-    "Economic development for local businesses",
-    "Enhanced civic pride and community unity"
+    {
+      icon: <FaUsers className="text-4xl text-green-600 mb-4" />,
+      title: (<><span className="highlight-local">Local</span> Leadership</>),
+      description: "City Council elected by and accountable to EDH residents only"
+    },
+    {
+      icon: <FaMoneyBillWave className="text-4xl text-green-600 mb-4" />,
+      title: "Financial Independence",
+      description: "Keep more tax dollars in EDH for EDH priorities"
+    },
+    {
+      icon: <FaShieldAlt className="text-4xl text-green-600 mb-4" />,
+      title: (<><span className="highlight-local">Local</span> Police Force</>),
+      description: "Dedicated police force focused solely on EDH"
+    },
+    {
+      icon: <FaRoad className="text-4xl text-green-600 mb-4" />,
+      title: "Better Infrastructure",
+      description: "More funding for road maintenance and improvements"
+    },
+    {
+      icon: <FaCity className="text-4xl text-green-600 mb-4" />,
+      title: (<>Development <span className="highlight-control">Control</span></>),
+      description: (<><span className="highlight-local">Local</span> <span className="highlight-control">control</span> over zoning and future growth</>)
+    },
+    {
+      icon: <FaHandshake className="text-4xl text-green-600 mb-4" />,
+      title: "Community Voice",
+      description: "Stronger position in regional planning decisions"
+    }
   ];
 
   return (
-    <section className="py-20 bg-white" id="advantages">
+    <section className="py-20 bg-gray-50" id="advantages">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16 text-green-800">Advantages of Cityhood</h2>
-        
-        <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
-            {benefits.map((benefit, index) => (
-              <div key={index} className="flex items-start space-x-4">
-                <FaCheckCircle className="text-green-500 text-xl flex-shrink-0 mt-1" />
-                <p className="text-lg text-gray-700">{benefit}</p>
-              </div>
-            ))}
-          </div>
-          
-          <div className="mt-12 bg-green-50 p-6 rounded-lg">
-            <h3 className="text-2xl font-semibold mb-4 text-green-800">No New Taxes Required</h3>
-            <p className="text-gray-700">
-              The transition to cityhood will be accomplished using existing tax revenues.
-              The initiative will be abandoned if additional taxes are required.
-            </p>
-          </div>
+        <h2 className="text-4xl font-bold text-center mb-16 text-green-800">
+          Advantages of <span className="highlight-local">Local</span> <span className="highlight-control">Control</span>
+        </h2>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {benefits.map((benefit, index) => (
+            <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+              <div className="flex justify-center">{benefit.icon}</div>
+              <h3 className="text-xl font-semibold mb-2 text-green-800">{benefit.title}</h3>
+              <p className="text-gray-600">{benefit.description}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

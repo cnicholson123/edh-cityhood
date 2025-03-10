@@ -12,7 +12,11 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Why change if EDH is already great?",
-      answer: "While EDH is indeed wonderful, becoming a city allows us to maintain and improve our community. We'll have better control over future developments, like Amazon warehouses, open space rezoning, and major development processes. Local control means better management of our community's growth and character."
+      answer: (
+        <>
+          While EDH is indeed wonderful, becoming a city allows us to maintain and improve our community. We'll have better <span className="highlight-control">control</span> over future developments, like Amazon warehouses, open space rezoning, and major development processes. <span className="highlight-local">Local</span> <span className="highlight-control">control</span> means better management of our community's growth and character.
+        </>
+      )
     },
     {
       question: "Will this require new taxes?",
@@ -20,23 +24,39 @@ const FAQ = () => {
     },
     {
       question: "What happens to existing services?",
-      answer: "The new city would take over land use, law enforcement, parks and rec, road maintenance, and other local municipal services. Other essential services like Fire/EMS, Schools, Water, Judicial, Jails, and Public Health will remain with the County and other Districts. The CSD will be dissolved, with Parks & Recreation functions being absorbed by the new city."
+      answer: (
+        <>
+          The new city would take over land use, law enforcement, parks and rec, road maintenance, and other <span className="highlight-local">local</span> municipal services. Other essential services like Fire/EMS, Schools, Water, Judicial, Jails, and Public Health will remain with the County and other Districts. The CSD will be dissolved, with Parks & Recreation functions being absorbed by the new city.
+        </>
+      )
     },
     {
-      question: "How will cityhood improve local control?",
-      answer: "The city will be governed by a five-member City Council, all from EDH and elected only by EDH residents. This ensures decisions about our community are made by people who live here and understand our needs."
+      question: (<>How will cityhood improve <span className="highlight-local">local</span> <span className="highlight-control">control</span>?</>),
+      answer: (
+        <>
+          The city will be governed by a five-member City Council, all from EDH and elected only by EDH residents. This ensures decisions about our community are made by people who live here and understand our needs.
+        </>
+      )
     },
     {
       question: "What's the timeline for becoming a city?",
       answer: "The process targets November 2026 for the ballot measure. Key milestones include a March 13, 2025 CSD Board meeting, followed by comprehensive fiscal and environmental analyses."
     },
     {
-      question: "How will cityhood improve law enforcement?",
-      answer: "Under cityhood, El Dorado Hills would have its own dedicated local police force that patrols exclusively within EDH boundaries. This means faster response times, as officers won't be pulled away to cover other parts of the county. Local police can focus on EDH-specific needs and priorities, develop deeper community relationships, and provide more consistent coverage. Additionally, having our own police force means local control over law enforcement policies, priorities, and resource allocation to better serve our community's specific needs."
+      question: (<>How will cityhood improve law enforcement?</>),
+      answer: (
+        <>
+          Under cityhood, El Dorado Hills would have its own dedicated <span className="highlight-local">local</span> police force that patrols exclusively within EDH boundaries. This means faster response times, as officers won't be pulled away to cover other parts of the county. <span className="highlight-local">Local</span> police can focus on EDH-specific needs and priorities, develop deeper community relationships, and provide more consistent coverage. Additionally, having our own police force means <span className="highlight-local">local</span> <span className="highlight-control">control</span> over law enforcement policies, priorities, and resource allocation to better serve our community's specific needs.
+        </>
+      )
     },
     {
-      question: "How would local planning and zoning help EDH?",
-      answer: "Local planning and zoning control would give EDH residents direct oversight over our community's development. Instead of decisions being made in Placerville, a local City Council would control crucial matters like the Amazon warehouse proposals, open space rezoning, and major development projects. For complex projects, like CSD's development of recently-purchased Old Golf Course property, the city would have comprehensive power to negotiate all aspects of the project. This means better protection of EDH's character and the ability to ensure new projects align with our community's vision.  If EDH had been a city, we very likely could have purchased the Old Golf Course for a much lower price because we would not have approved a residential re-zone, and the land owner would have realized that."
+      question: (<>How would <span className="highlight-local">local</span> planning and zoning help EDH?</>),
+      answer: (
+        <>
+          <span className="highlight-local">Local</span> planning and zoning <span className="highlight-control">control</span> would give EDH residents direct oversight over our community's development. Instead of decisions being made in Placerville, a <span className="highlight-local">local</span> City Council would <span className="highlight-control">control</span> crucial matters like the Amazon warehouse proposals, open space rezoning, and major development projects. For complex projects like the Old Golf Course, the city would have comprehensive power to manage all aspects of development. This means better protection of EDH's character and the ability to ensure new projects align with our community's vision. If EDH had been a city, we very likely could have purchased the Old Golf Course for a much lower price because we would not have approved a residential re-zone.
+        </>
+      )
     }
   ];
 
@@ -55,15 +75,27 @@ const FAQ = () => {
     },
     {
       question: "I moved to EDH to escape another city. I don't want to live in a city.",
-      answer: "'City' is just a word that means 'local control.' The real-world impact of cityhood will depend on actions of our City Council, which will be elected by local residents only, instead of 5 County Board of Supervisors operating from Placerville."
+      answer: (
+        <>
+          'City' is just a word that means '<span className="highlight-local">local</span> <span className="highlight-control">control</span>.' The real-world impact of cityhood will depend on actions of our City Council, which will be elected by <span className="highlight-local">local</span> residents only, instead of 5 County Board of Supervisors operating from Placerville.
+        </>
+      )
     },
     {
       question: "Will this mean more low-income housing in EDH?",
-      answer: "No. Currently, El Dorado County is in control of placement of affordable housing in EDH. Incorporation does not increase the overall regional low-income housing allocation. As a city, we will have a seat at the table and have local control over how and where to plan for affordable housing instead of the County."
+      answer: (
+        <>
+          No. Currently, El Dorado County is in <span className="highlight-control">control</span> of placement of affordable housing in EDH. Incorporation does not increase the overall regional low-income housing allocation. As a city, we will have a seat at the table and have <span className="highlight-local">local</span> <span className="highlight-control">control</span> over how and where to plan for affordable housing instead of the County.
+        </>
+      )
     },
     {
       question: "Does cityhood mean more growth?",
-      answer: "No. The opponents of cityhood in 2005 made this argument. Under county control, EDH has grown a lot since 2005. Growth more than doubled from 18,000 residents in 2000 to 42,000 in 2010. The current population is approximately 50,000. Cityhood puts local residents in charge of land use decisions impacting growth. There would be no future re-zones without city approval."
+      answer: (
+        <>
+          No. The opponents of cityhood in 2005 made this argument. Under county <span className="highlight-control">control</span>, EDH has grown a lot since 2005. Growth more than doubled from 18,000 residents in 2000 to 42,000 in 2010. The current population is approximately 50,000. Cityhood puts <span className="highlight-local">local</span> residents in charge of land use decisions impacting growth. There would be no future re-zones without city approval.
+        </>
+      )
     }
   ];
 

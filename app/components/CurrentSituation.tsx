@@ -5,8 +5,8 @@ const CurrentSituation = () => {
   const facts = [
     {
       icon: <FaBalanceScale className="text-4xl text-green-600 mb-4" />,
-      title: "Limited Representation",
-      description: "Only one Supervisor represents EDH in county decisions"
+      title: (<>Limited <span className="highlight-local">Local</span> <span className="highlight-control">Control</span></>),
+      description: "Only one Supervisor represents EDH in county decisions, limiting our <span className='highlight-local'>local</span> <span className='highlight-control'>control</span>"
     },
     {
       icon: <FaUsers className="text-4xl text-green-600 mb-4" />,
@@ -28,13 +28,15 @@ const CurrentSituation = () => {
   return (
     <section className="py-20 bg-white" id="current-situation">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl font-bold text-center mb-16 text-green-800">Current Situation (Subservient to County)</h2>
+        <h2 className="text-4xl font-bold text-center mb-16 text-green-800">
+          Current Situation (No <span className="highlight-local">Local</span> <span className="highlight-control">Control</span>)
+        </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {facts.map((fact, index) => (
             <div key={index} className="bg-white p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition">
               <div className="flex justify-center">{fact.icon}</div>
               <h3 className="text-xl font-semibold mb-2 text-green-800">{fact.title}</h3>
-              <p className="text-gray-600">{fact.description}</p>
+              <p className="text-gray-600" dangerouslySetInnerHTML={{ __html: fact.description }}></p>
             </div>
           ))}
         </div>
